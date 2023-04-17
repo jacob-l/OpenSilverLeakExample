@@ -1,0 +1,17 @@
+﻿<sdk:Page
+    x:Class="OpenSilverLeakExample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:local="clr-namespace:OpenSilverLeakExample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel>
+        <Button Content="Show leaking window" Click="ShowLeakingWindow" />
+        <Button Content="Show not leaking window" Click="ShowNotLeakingWindow" />
+        <Button Content="Call Garbage Collector" Click="CallGarbageCollector" />
+        <Button Content="Measure leaks" Click="RunMeasurements" />
+        <TextBlock x:Name="TB" TextWrapping="Wrap" />
+    </StackPanel>
+</sdk:Page>
