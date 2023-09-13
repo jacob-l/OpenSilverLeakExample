@@ -8,7 +8,10 @@ namespace OpenSilverLeakExample.Simulator
         [STAThread]
         static int Main(string[] args)
         {
-            return SimulatorLauncher.Start(typeof(App));
+            return SimulatorLauncher.Start(typeof(App), new SimulatorLaunchParameters
+            {
+                LogExecutedJavaScriptCode = false
+            });
         }
     }
 }
