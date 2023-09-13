@@ -20,7 +20,7 @@ namespace OpenSilverLeakExample
             //Global event!!!
             Application.Current.Exit += Application_Exit;
 
-            //Unloaded += (s,a)=> Application.Current.Exit -= Application_Exit;;
+            //Unloaded += (s,a)=> Application.Current.Exit -= Application_Exit;
         }
 
         public string Id { get; }

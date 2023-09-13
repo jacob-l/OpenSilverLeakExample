@@ -27,6 +27,7 @@ namespace OpenSilverLeakExample
 
         private void NoLeakWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            Unloaded -= NoLeakWindow_Loaded;
             _log += "Do some huge work!";
         }
 
